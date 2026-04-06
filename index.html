@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="Mohammadtaghi Fattahpour Marandi" />
+<meta name="keywords" content="Mohammad Fattahpour, Mohammadtaghi Fattahpour, Fattahpour Marandi, Mohammad Fattahpour MD, M Fattahpour, MT Fattahpour, mtfattahpour, physician researcher, biomedical data science, clinical machine learning, Tehran University of Medical Sciences" />
+<meta property="og:title" content="Mohammad Fattahpour, MD — Physician-Researcher" />
+<meta property="og:description" content="Physician-researcher specializing in clinical data science, biomedical ML, and translational research. National Biology Olympiad Gold Medalist. Seeking PhD and postdoctoral positions." />
+<meta property="og:type" content="profile" />
+<link rel="canonical" href="https://mtfattahpour.github.io/" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mohammad Fattahpour",
+  "alternateName": [
+    "Mohammadtaghi Fattahpour",
+    "Mohammad Fattahpour Marandi",
+    "Mohammadtaghi Fattahpour Marandi",
+    "M. Fattahpour",
+    "M.T. Fattahpour",
+    "MT Fattahpour",
+    "mtfattahpour",
+    "Mohammad T. Fattahpour",
+    "M Fattahpour MD",
+    "Fattahpour MD"
+    "Dr Fattahpour"
+    "Dr Mohammad Fattahpour"
+    "Dr Mohammadtaghi Fattahpour"
+  ],
+  "honorificSuffix": "MD",
+  "jobTitle": "Physician-Researcher",
+  "description": "Medical Doctor and researcher specializing in clinical data science, biomedical machine learning, and translational research. Graduate of Tehran University of Medical Sciences and National Biology Olympiad Gold Medalist.",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Tehran University of Medical Sciences"
+  },
+  "knowsAbout": [
+    "Clinical Data Science",
+    "Biomedical Machine Learning",
+    "Translational Research",
+    "Electronic Health Records",
+    "Biostatistics",
+    "Survival Analysis",
+    "Natural Language Processing",
+    "Neuroscience"
+  ],
+  "url": "https://mtfattahpour.github.io/",
+  "sameAs": [
+    "https://github.com/mtfattahpour",
+    "https://orcid.org/0000-0000-0000-0000"
+  ]
+}
+</script>
+<meta name="description" content="Mohammad Fattahpour, MD — Physician-researcher specializing in clinical data science, biomedical ML &amp; translational research. Seeking PhD &amp; postdoctoral positions." />
+<title>Mohammad Fattahpour | Physician-Researcher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ─── TOKENS ─────────────────────────────────────── */
+:root {
+  --bg:      #F5F1EB;
+  --ink:     #0F1B15;
+  --mid:     #3A4A42;
+  --muted:   #6B7B72;
+  --rule:    #C9C2B6;
+  --green:   #2B6349;
+  --green2:  #1E4D39;
+  --accent:  #B8872A;
+  --card-bg: rgba(255,255,255,0.45);
+  --card-bd: rgba(180,172,160,0.55);
+  --radius:  14px;
+  --ease:    cubic-bezier(.22,.61,.36,1);
+}
+
+/* ─── RESET ──────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ─── GRAIN TEXTURE ──────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: .028;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 300px 300px;
+}
+
+/* ─── HELPERS ────────────────────────────────────── */
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+strong { font-weight: 600; }
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .65s var(--ease), transform .65s var(--ease);
+}
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+/* ─── NAV ────────────────────────────────────────── */
+nav {
+  position: fixed;
+  top: 14px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 500;
+  padding: 0 12px;
+}
+.nav-pill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px;
+  background: rgba(245,241,235,.86);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(196,189,178,.75);
+  border-radius: 50px;
+  padding: 6px 8px;
+  box-shadow: 0 8px 36px rgba(0,0,0,.09), 0 1px 0 rgba(255,255,255,.6) inset;
+}
+.nav-pill a {
+  font-size: .82rem;
+  font-weight: 500;
+  letter-spacing: .025em;
+  color: var(--muted);
+  padding: 5px 12px;
+  border-radius: 50px;
+  transition: color .18s, background .18s;
+  white-space: nowrap;
+}
+.nav-pill a:hover { color: var(--green); background: rgba(43,99,73,.07); }
+.nav-pill a.active { background: var(--green); color: #fff; }
+
+/* ─── LAYOUT ─────────────────────────────────────── */
+main { width: 100%; }
+section {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 10px 28px 48px;
+  scroll-margin-top: 80px;
+}
+section#about { padding-top: 110px; }
+
+/* ─── SECTION HEADING ────────────────────────────── */
+.s-head {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 32px;
+}
+.s-head::before, .s-head::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--accent) 40%, transparent);
+  opacity: .45;
+}
+.s-head h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+  letter-spacing: .01em;
+}
+
+/* ─── HERO ───────────────────────────────────────── */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 270px;
+  gap: 44px;
+  align-items: start;
+}
+
+.portrait {
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,.5);
+  border: 1px solid var(--card-bd);
+  box-shadow: 0 8px 28px rgba(0,0,0,.06);
+  aspect-ratio: 4 / 5;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: .85rem;
+}
+.portrait img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Hero links: always 2-per-row grid */
+.hero-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 14px;
+}
+.hero-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 11px;
+  border: 1px solid var(--card-bd);
+  border-radius: 10px;
+  background: var(--card-bg);
+  font-size: .83rem;
+  font-weight: 500;
+  color: var(--mid);
+  transition: border-color .18s, background .18s, color .18s, transform .18s var(--ease);
+  backdrop-filter: blur(6px);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.hero-links a:hover {
+  border-color: var(--green);
+  background: rgba(43,99,73,.06);
+  color: var(--green);
+  transform: translateY(-1px);
+}
+.hero-links a svg { flex-shrink: 0; opacity: .7; }
+.hero-links a span { overflow: hidden; text-overflow: ellipsis; }
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.md-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 13px;
+  background: rgba(43,99,73,.09);
+  border: 1.5px solid rgba(43,99,73,.28);
+  border-radius: 999px;
+  font-family: 'Jost', sans-serif;
+  font-size: .95rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: var(--green);
+  vertical-align: middle;
+  line-height: 1;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.hero-role {
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+.bio {
+  font-size: 1.02rem;
+  line-height: 1.78;
+  color: var(--mid);
+  text-align: justify;
+  hyphens: auto;
+}
+.bio p + p { margin-top: 12px; }
+
+/* ─── CARDS ──────────────────────────────────────── */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-bd);
+  border-radius: var(--radius);
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 18px rgba(0,0,0,.04);
+  transition: transform .22s var(--ease), box-shadow .22s var(--ease), border-color .22s;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(0,0,0,.08);
+  border-color: rgba(43,99,73,.25);
+}
+.card-label {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+.card p, .card li { font-size: .93rem; color: var(--mid); }
+
+/* ─── ENTRY LIST ─────────────────────────────────── */
+.entry-list { display: flex; flex-direction: column; gap: 0; }
+.entry {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--rule);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px 24px;
+  align-items: start;
+}
+.entry:first-child { padding-top: 0; }
+.entry:last-child { border-bottom: none; padding-bottom: 0; }
+.entry-title {
+  font-weight: 600;
+  font-size: .98rem;
+  color: var(--ink);
+  line-height: 1.4;
+  grid-column: 1;
+}
+.entry-meta {
+  font-size: .82rem;
+  color: var(--muted);
+  white-space: nowrap;
+  text-align: right;
+  grid-column: 2;
+  grid-row: 1;
+  padding-top: 2px;
+}
+.entry-sub {
+  grid-column: 1 / -1;
+  font-size: .9rem;
+  color: var(--mid);
+  margin-top: 4px;
+}
+
+/* ─── ROLE CHIP ──────────────────────────────────── */
+.role-chip {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+  background: rgba(43,99,73,.1);
+  color: var(--green);
+  border: 1px solid rgba(43,99,73,.2);
+  vertical-align: middle;
+  margin-left: 7px;
+}
+.role-chip.gold {
+  background: rgba(184,135,42,.1);
+  color: var(--accent);
+  border-color: rgba(184,135,42,.22);
+}
+
+/* ─── PROJECT CARDS ──────────────────────────────── */
+.proj-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-bd);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  backdrop-filter: blur(8px);
+  transition: transform .22s var(--ease), box-shadow .22s var(--ease), border-color .22s;
+}
+.proj-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(0,0,0,.08);
+  border-color: rgba(43,99,73,.3);
+}
+.proj-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.proj-top h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.3;
+}
+.proj-gh-link {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid var(--card-bd);
+  color: var(--muted);
+  transition: color .18s, border-color .18s, background .18s;
+}
+.proj-gh-link:hover { color: var(--ink); border-color: var(--ink); background: rgba(15,27,21,.05); }
+.proj-desc { font-size: .9rem; color: var(--mid); line-height: 1.6; }
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+.pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--rule);
+  background: rgba(255,255,255,.4);
+  font-size: .78rem;
+  font-weight: 500;
+  color: var(--mid);
+}
+
+/* ─── CURRICULUM DROPDOWN ────────────────────────── */
+.curriculum-toggle {
+  margin-top: 14px;
+  border: 1px solid var(--card-bd);
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255,255,255,.28);
+}
+.curriculum-toggle summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--green);
+  user-select: none;
+  transition: background .15s;
+}
+.curriculum-toggle summary::-webkit-details-marker { display: none; }
+.curriculum-toggle summary:hover { background: rgba(43,99,73,.05); }
+.toggle-arrow {
+  width: 17px;
+  height: 17px;
+  border: 1.5px solid currentColor;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: .62rem;
+  transition: transform .22s var(--ease);
+}
+.curriculum-toggle[open] .toggle-arrow { transform: rotate(90deg); }
+.curriculum-inner {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .34s var(--ease), padding .34s var(--ease);
+  padding: 0 14px;
+}
+.curriculum-toggle[open] .curriculum-inner {
+  grid-template-rows: 1fr;
+  padding: 4px 14px 14px;
+  border-top: 1px solid var(--rule);
+}
+.curriculum-content {
+  overflow: hidden;
+}
+.phase-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-top: 10px;
+}
+.phase-list li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 11px;
+  align-items: start;
+}
+.phase-num {
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(184,135,42,.1);
+  border: 1px solid rgba(184,135,42,.22);
+  border-radius: 6px;
+  padding: 3px 7px;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+.phase-text {
+  font-size: .88rem;
+  color: var(--mid);
+  line-height: 1.55;
+}
+.phase-text strong { color: var(--ink); }
+
+/* ─── SKILLS ─────────────────────────────────────── */
+.skill-section { margin-bottom: 18px; }
+.skill-section:last-child { margin-bottom: 0; }
+.skill-label {
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+/* ─── EDUCATION ──────────────────────────────────── */
+.edu-block {
+  padding: 24px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-bd);
+  border-radius: var(--radius);
+  backdrop-filter: blur(8px);
+  margin-bottom: 16px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.04);
+  transition: transform .22s var(--ease), box-shadow .22s var(--ease), border-color .22s;
+}
+.edu-block:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(0,0,0,.08);
+  border-color: rgba(43,99,73,.25);
+}
+.edu-block:last-child { margin-bottom: 0; }
+.edu-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.edu-inst {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.edu-date { font-size: .84rem; color: var(--muted); white-space: nowrap; }
+.edu-degree { font-size: .9rem; font-weight: 600; color: var(--green); margin-bottom: 10px; }
+.edu-items { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+.edu-items li {
+  font-size: .9rem;
+  color: var(--mid);
+  padding-left: 14px;
+  position: relative;
+}
+.edu-items li::before { content: '–'; position: absolute; left: 0; color: var(--accent); }
+
+/* ─── CLINICAL ───────────────────────────────────── */
+.clinical-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.clinical-head h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.clinical-date {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.rotation-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-top: 16px;
+}
+.rotation-item {
+  padding: 10px;
+  border: 1px solid var(--card-bd);
+  border-radius: 10px;
+  background: var(--card-bg);
+  font-size: .79rem;
+  text-align: center;
+  color: var(--mid);
+  font-weight: 500;
+  line-height: 1.35;
+  transition: transform .22s var(--ease), box-shadow .22s var(--ease), border-color .22s, color .22s;
+}
+.rotation-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.07);
+  border-color: rgba(43,99,73,.25);
+  color: var(--green);
+}
+
+/* ─── DIVIDER ────────────────────────────────────── */
+.gold-rule {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--accent), transparent);
+  opacity: .3;
+  margin: 24px 0;
+}
+
+/* ─── CONTACT ────────────────────────────────────── */
+.contact-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 20px;
+}
+.contact-info { display: flex; flex-direction: column; gap: 12px; }
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 16px;
+  border: 1px solid var(--card-bd);
+  border-radius: 12px;
+  background: var(--card-bg);
+  font-size: .9rem;
+  color: var(--mid);
+  transition: border-color .18s, background .18s, color .18s, transform .18s var(--ease);
+}
+.contact-item:hover {
+  border-color: var(--green);
+  background: rgba(43,99,73,.05);
+  color: var(--green);
+  transform: translateX(3px);
+}
+.contact-item svg { flex-shrink: 0; opacity: .65; }
+.cform {
+  background: var(--card-bg);
+  border: 1px solid var(--card-bd);
+  border-radius: var(--radius);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  backdrop-filter: blur(8px);
+}
+.cform input, .cform textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: rgba(255,255,255,.75);
+  font-family: 'Jost', sans-serif;
+  font-size: .92rem;
+  color: var(--ink);
+  transition: border-color .18s;
+  outline: none;
+}
+.cform input:focus, .cform textarea:focus { border-color: var(--green); }
+.cform textarea { resize: vertical; min-height: 110px; }
+.cform button {
+  padding: 12px;
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Jost', sans-serif;
+  font-size: .95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .18s, transform .18s var(--ease);
+}
+.cform button:hover { background: var(--green2); transform: translateY(-2px); }
+
+/* ─── FOOTER ─────────────────────────────────────── */
+footer {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 6px 28px 44px;
+  color: var(--muted);
+  font-size: .82rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+footer span { opacity: .7; }
+
+/* ─── RESPONSIVE ─────────────────────────────────── */
+@media (max-width: 820px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  aside {
+    order: -1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 12px;
+    align-items: stretch;
+  }
+  .portrait {
+    max-width: none;
+    min-height: auto;
+    margin: 0;
+    height: 100%;
+  }
+  .hero-links {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+    align-content: center;
+  }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .contact-wrap { grid-template-columns: 1fr; }
+  .rotation-grid { grid-template-columns: repeat(3, 1fr); }
+  h1 { font-size: 2rem; }
+  section { padding: 10px 20px 44px; }
+  section#about { padding-top: 96px; }
+  .nav-pill a { font-size: .76rem; padding: 4px 9px; }
+  .entry { grid-template-columns: 1fr; }
+  .entry-meta { grid-column: 1; text-align: left; }
+}
+@media (max-width: 520px) {
+  h1 { font-size: 1.7rem; }
+  .rotation-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav aria-label="Primary navigation">
+  <div class="nav-pill">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#awards">Awards</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#clinical">Clinical</a>
+    <a href="#skills">Skills</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ── ABOUT ─────────────────────────────────────── -->
+  <section id="about">
+    <div class="hero-grid fade-up">
+
+      <!-- TEXT — LEFT column -->
+      <div>
+        <p class="hero-role">Physician-Researcher · Biomedical Data Science</p>
+        <h1>Mohammad Fattahpour<span class="md-badge">MD</span></h1>
+        <div class="bio">
+          <p>I am a Medical Doctor (MD), recently graduated from <strong>Tehran University of Medical Sciences</strong>, and a <strong>National Biology Olympiad Gold Medalist</strong>.</p>
+        
+          <p>I am interested in applying computational and algorithmic approaches to healthcare, be it by analyzing health data to derive actionable clinical insights, statistical modeling to study population-level health trends, integrating AI/ML workflows to address any specific challenge in medicine, or developing deep learning models that can ultimately assist in improving diagnosis, patient care and health outcomes.</p>
+          
+          <p>I am seeking funded PhD or research positions in computational health and biomedical data science. I would appreciate a conversation if my background is a fit for your team.</p>
+        </div>
+      </div>
+
+      <!-- PHOTO — RIGHT column -->
+      <aside>
+        <div class="portrait">
+          <img src="assets/photo.jpg" alt="Dr. Mohammadtaghi Fattahpour Marandi — Physician-Researcher, Biomedical Data Science"
+               onerror="this.parentElement.innerHTML='<span style=\'padding:24px;text-align:center;color:var(--muted)\'>Photo</span>'">
+        </div>
+        <div class="hero-links">
+          <a href="mailto:mtfattahpour99@gmail.com">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            <span>Email</span>
+          </a>
+          <a href="https://github.com/mtfattahpour" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.55V9H3.56v11.45z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener noreferrer" aria-label="ORCID Profile">
+            <svg width="14" height="14" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="128" cy="128" r="128" fill="#A6CE39"/><path d="M86.3 186.2H70.9V79.1h15.4v107.1zm-7.7-119.8c-5.2 0-9.4-4.2-9.4-9.4s4.2-9.4 9.4-9.4 9.4 4.2 9.4 9.4-4.2 9.4-9.4 9.4zm107.7 119.8h-15.2v-52c0-19.5-6.9-30.8-21.2-30.8-12.1 0-19.9 8.2-23.2 16.1-.9 2.2-1.1 5.2-1.1 8.2v58.5h-15.4V128c0-9.8-.3-18-.6-25.2h13.3l.7 13.3h.4c4.1-7.4 13.5-15.1 27.1-15.1 18 0 31.5 11.8 31.5 37.2v47.9h-.3z" fill="white"/></svg>
+            <span>ORCID</span>
+          </a>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ──────────────────────────────── -->
+  <section id="education">
+    <div class="s-head fade-up"><h2>Education</h2></div>
+    <div class="fade-up">
+
+      <div class="edu-block">
+        <div class="edu-head">
+          <span class="edu-inst">Tehran University of Medical Sciences</span>
+          <span class="edu-date">Sep 2017 – Jul 2025 · Tehran, Iran</span>
+        </div>
+        <div class="edu-degree">Doctor of Medicine (MD)</div>
+        <ul class="edu-items">
+          <li><strong>GPA:</strong> 16.82 / 20 overall&nbsp;·&nbsp;18.23 / 20 internship</li>
+          <li><strong>Thesis:</strong> Evaluation of Serum Ferritin Levels Based on the Type of Iron Chelation Therapy in Patients with Major Thalassemia — Children's Medical Center, 2025</li>
+          <li><strong>Clinical training:</strong> 18-month full-time internship across 15 medical specialties</li>
+        </ul>
+
+        <details class="curriculum-toggle">
+          <summary>
+            <span class="toggle-arrow">▶</span>
+            Curriculum Overview
+          </summary>
+          <div class="curriculum-inner">
+            <div class="curriculum-content">
+              <ul class="phase-list">
+              <li>
+                <span class="phase-num">Phase 1</span>
+                <span class="phase-text"><strong>Basic Sciences</strong> — Core foundational disciplines including Anatomy, Physiology, Biochemistry, Histology, Embryology, Biostatistics, Epidemiology, and Principles of Research Design.</span>
+              </li>
+              <li>
+                <span class="phase-num">Phase 2</span>
+                <span class="phase-text"><strong>Physiopathology</strong> — Advanced system-based integration of Pathophysiology and Pharmacology, bridging basic science knowledge to clinical reasoning.</span>
+              </li>
+              <li>
+                <span class="phase-num">Phase 3</span>
+                <span class="phase-text"><strong>Clinical Clerkship</strong> — Hands-on clinical rotations across major medical specialties, combined with integrated theoretical coursework in clinical diagnosis, therapeutics, and evidence-based medicine.</span>
+              </li>
+              <li>
+                <span class="phase-num">Phase 4</span>
+                <span class="phase-text"><strong>Clinical Internship</strong> — Full-time inpatient and outpatient responsibilities across 15 specialties at university teaching hospitals, ending with a defended Medical Thesis.</span>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <div class="edu-block">
+        <div class="edu-head">
+          <span class="edu-inst">Shahid Madani High School — NODET</span>
+          <span class="edu-date">Graduated 2017 · Tabriz, Iran</span>
+        </div>
+        <div class="edu-degree">National Science Diploma</div>
+        <ul class="edu-items">
+          <li><strong>NODET (National Organization for Development of Exceptional Talents),</strong> is a highly selective national school system admitting approximately the top 1% of students nationwide through rigorous entrance examinations.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── AWARDS ─────────────────────────────────── -->
+  <section id="awards">
+    <div class="s-head fade-up"><h2>Awards</h2></div>
+    <div class="grid-2 fade-up">
+      <div class="card">
+        <div class="card-label">2016</div>
+        <h3>🥇 Gold Medal — Iranian Biology Olympiad</h3>
+        <p style="margin-top:8px;">The Iranian Biology Olympiad is the most prestigious nationwide scientific competition for Iranian students, held annually. Grants direct, exam-free admission to any university program in Iran.</p>
+      </div>
+      <div class="card">
+        <div class="card-label">2015</div>
+        <h3>🥉 Bronze Medal — Iranian Biology Olympiad</h3>
+        <!-- <p style="margin-top:8px;">Awarded during the preceding year’s nationwide competition.</p> -->
+      </div>
+    </div>
+  </section>
+<!-- ── RESEARCH ───────────────────────────────── -->
+  <section id="research">
+    <div class="s-head fade-up"><h2>Research Experience</h2></div>
+
+    <div class="entry-list fade-up">
+      
+      <!-- ITEM 1: AJIC Paper -->
+      <div class="entry">
+        <div class="entry-title">
+          Assessment of Awareness, Adherence, and Barriers to Device-Associated Infection Prevention Measures in Intensive Care Units: A Multi-Center Cross-Sectional Study
+          <span class="role-chip gold">Corresponding Author</span>
+        </div>
+        <div class="entry-meta"><em>American Journal of Infection Control</em> &nbsp;·&nbsp; Article in Press &nbsp;·&nbsp; 2026</div>
+        <div class="entry-sub">
+          <strong>Overview:</strong> Coordinated a multicenter cross-sectional study across 20 Iranian ICUs, leading the statistical analysis and data harmonization pipelines to assess adherence to DAI prevention guidelines (CLABSI, CAUTI, VAP). The ICUs demonstrated moderate overall adherence (77.9%) and quantitatively identified systemic organizational factors—specifically staff shortages and absent periodic training—as the primary implementation barriers.
+          
+          <!-- Links Container -->
+          <div style="margin-top: 10px; display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://www.ajicjournal.org/article/S0196-6553(26)00100-8/abstract" target="_blank" rel="noopener noreferrer" aria-label="Read AJIC Article" style="color:var(--green); text-decoration:none; font-size:0.88rem; font-weight:600;">
+              📄 Read Article ↗
+            </a>
+            <!-- Code Link for Re-Analysis -->
+            <a href="https://github.com/mtfattahpour/icu-infection-prevention-analysis" target="_blank" rel="noopener noreferrer" aria-label="View Data Analysis Code" style="color:var(--green); text-decoration:none; font-size:0.88rem; font-weight:600;">
+              💻 View Code & Analysis ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 2: Alzheimer's Paper -->
+      <div class="entry">
+        <div class="entry-title">
+          Association of Brain and Ventricular Boundary Shift Integral Measurements with CSF Biomarkers: A Case-Control Study
+        </div>
+        <div class="entry-meta"><em>Current Alzheimer Research</em> &nbsp;·&nbsp; Published &nbsp;·&nbsp; Jun 2025</div>
+        <div class="entry-sub">
+          <strong>Overview:</strong> Investigated the relationship between cerebrospinal fluid (CSF) biomarkers (Aβ1-42, p-tau181) and longitudinal brain volumetric changes using neuroimaging data from the ADNI cohort. The study utilized the Brain/Ventricular Boundary Shift Integral (BSI) to demonstrate that these biomarkers are significant statistical predictors of early brain atrophy in Mild Cognitive Impairment (MCI), underscoring their utility in monitoring early-stage neurodegeneration.
+          
+          <div style="margin-top: 10px; display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://doi.org/10.2174/0115672050379856250529113023" target="_blank" rel="noopener noreferrer" aria-label="Read Current Alzheimer Research Article" style="color:var(--green); text-decoration:none; font-size:0.88rem; font-weight:600;">
+              📄 Read Article ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 3: MD Thesis -->
+      <div class="entry">
+        <div class="entry-title">
+          Evaluation of Serum Ferritin Levels Based on the Type of Iron Chelation Therapy in Patients with Major Thalassemia
+          <span class="role-chip gold">Medical Doctorate Thesis</span>
+        </div>
+        <div class="entry-meta">Tehran University of Medical Sciences &nbsp;·&nbsp; Defended &nbsp;·&nbsp; July 2025</div>
+        <div class="entry-sub">
+          <strong>Overview:</strong> A clinical cross-sectional analysis of 56 β-thalassemia major patients evaluating predictors of iron overload. Extracted and processed clinical EMR data, subsequently utilizing ordinal logistic regression to demonstrate that blood transfusion interval intensity and patient age are significant independent predictors of severe serum ferritin elevation, whereas the specific type of iron chelation therapy showed no statistically significant difference in efficacy.
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ── PROJECTS ───────────────────────────────── -->
+  <section id="projects">
+    <div class="s-head fade-up"><h2>Technical Experience</h2></div>
+    <p class="fade-up" style="color:var(--muted);font-size:.93rem;margin:-12px 0 22px;">Python-based biomedical analysis and tool-building projects. All repositories are publicly available on GitHub.</p>
+
+    <div class="grid-2 fade-up" style="margin-bottom:16px;">
+      <div class="proj-card">
+        <div class="proj-top">
+          <div class="card-label" style="margin:0;">Python · Reproducible Research</div>
+          <a href="https://github.com/mtfattahpour/icu-infection-prevention-analysis" target="_blank" rel="noopener noreferrer" class="proj-gh-link" aria-label="View on GitHub">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+          </a>
+        </div>
+        <h3>ICU Infection Prevention — Extended Analysis</h3>
+        <p class="proj-desc">Python re-analysis and extension of our published multi-center ICU study. Includes reproducible Jupyter notebooks for descriptive, and inferential statistics, hypothesis tests, and visualizations not included in the manuscript.</p>
+        <div class="pill-row">
+          <span class="pill">Pandas</span><span class="pill">SciPy</span><span class="pill">Seaborn</span><span class="pill">Statsmodels</span><span class="pill">Reproducible Research</span>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-top">
+          <div class="card-label" style="margin:0;">Machine Learning · NLP · RAG</div>
+          <a href="https://github.com/mtfattahpour/telegram-ai-assistant" target="_blank" rel="noopener noreferrer" class="proj-gh-link" aria-label="View on GitHub">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+          </a>
+        </div>
+        <h3>Telegram AI Assistant — Clinical Knowledge RAG</h3>
+        <p class="proj-desc">An event-driven Retrieval-Augmented Generation (RAG) agent built on Telethon + Google Gemini. Transforms large Telegram group histories (clinical case discussions, morning reports) into a queryable knowledge base with cited, grounded responses and deep-link message references. Supports multilingual input including Persian/RTL.</p>
+        <div class="pill-row">
+          <span class="pill">Python</span><span class="pill">Telethon</span><span class="pill">Gemini API</span><span class="pill">RAG</span><span class="pill">LLM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-3 fade-up">
+      <div class="proj-card">
+        <div class="proj-top">
+          <div class="card-label" style="margin:0;">ML · Neurodegeneration</div>
+          <a href="https://github.com/mtfattahpour/alzheimer-ml-prediction" target="_blank" rel="noopener noreferrer" class="proj-gh-link" aria-label="View on GitHub">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+          </a>
+        </div>
+        <h3>Alzheimer's Diagnosis via ML</h3>
+        <p class="proj-desc">End-to-end binary classification workflow: EDA, statistical hypothesis testing, feature selection (Chi-Square, Mann-Whitney U), and comparison of seven classifiers including XGBoost. Examines clinical plausibility and synthetic-data limitations.</p>
+        <div class="pill-row">
+          <span class="pill">XGBoost</span><span class="pill">scikit-learn</span><span class="pill">EDA</span>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-top">
+          <div class="card-label" style="margin:0;">ML · Imbalanced Data</div>
+          <a href="https://github.com/mtfattahpour/stroke-prediction" target="_blank" rel="noopener noreferrer" class="proj-gh-link" aria-label="View on GitHub">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+          </a>
+        </div>
+        <h3>Stroke Risk Prediction</h3>
+        <p class="proj-desc">Recall-optimized classification on a severely imbalanced clinical dataset. Explores SMOTE, class weighting, feature engineering (risk scores, interaction terms), and hyperparameter search with GridSearchCV. Final XGBoost model achieves 84% sensitivity.</p>
+        <div class="pill-row">
+          <span class="pill">Predictive Modeling</span><span class="pill">SMOTE</span><span class="pill">Feature Engineering</span>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-top">
+          <div class="card-label" style="margin:0;">ML · Epidemiology</div>
+          <a href="https://github.com/mtfattahpour/chd-prediction" target="_blank" rel="noopener noreferrer" class="proj-gh-link" aria-label="View on GitHub">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+          </a>
+        </div>
+        <h3>10-Year Coronary Heart Disease Risk</h3>
+        <p class="proj-desc">Framingham Heart Study dataset. Compares SMOTE-based vs class-weight-based imbalance correction. Documents the accuracy-vs-F1 paradox and a common data leakage error found in public notebooks on this dataset.</p>
+        <div class="pill-row">
+          <span class="pill">CHD</span><span class="pill">Class Imbalance</span><span class="pill">XGBoost</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CLINICAL ───────────────────────────────── -->
+  <section id="clinical">
+    <div class="s-head fade-up"><h2>Clinical Experience</h2></div>
+
+    <div class="fade-up" style="display:grid; gap:16px;">
+      <div class="proj-card">
+        <div class="proj-top">
+          <div class="card-label" style="margin:0;">Clinical Training</div>
+          <span class="clinical-date">2023 – 2025</span>
+        </div>
+        <h3>18-Month Internship</h3>
+        <p style="font-size:.92rem;color:var(--mid);">Completed full-time, supervised clinical responsibilities within high-volume university teaching hospitals. Engaged in comprehensive patient assessment, clinical reasoning, differential diagnosis, and collaborative patient management across inpatient and outpatient settings under faculty mentorship. This program spanned the following core specialties:</p>
+      </div>
+
+      <div class="rotation-grid">
+        <div class="rotation-item">Internal Medicine</div>
+        <div class="rotation-item">Surgery (General)</div>
+        <div class="rotation-item">Pediatrics</div>
+        <div class="rotation-item">Obstetrics &amp; Gynecology</div>
+        <div class="rotation-item">Emergency Medicine</div>
+        <div class="rotation-item">Cardiology</div>
+        <!-- <div class="rotation-item">Neurology</div> -->
+        <div class="rotation-item">Psychiatry</div>
+        <div class="rotation-item">Infectious Diseases</div>
+        <div class="rotation-item">Orthopedics</div>
+        <div class="rotation-item">Anesthesiology</div>
+        <div class="rotation-item">Dermatology</div>
+        <div class="rotation-item">Forensic Medicine</div>
+        <div class="rotation-item">Toxicology</div>
+        <div class="rotation-item">Family Medicine</div>
+        <div class="rotation-item">Public Health</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ── SKILLS ─────────────────────────────────── -->
+  <section id="skills">
+    <div class="s-head fade-up"><h2>Skills & Expertise</h2></div>
+    <div class="grid-2 fade-up">
+      <div class="card" style="gap:18px;display:flex;flex-direction:column;">
+        <div class="skill-section">
+          <div class="skill-label">Clinical Research</div>
+          <div class="pill-row">
+            <span class="pill">Biostatistics</span>
+            <span class="pill">EHR Data Processing</span>
+            <span class="pill">SPSS</span>
+            <span class="pill">Survival Analysis</span>
+            <span class="pill">Predictive Modeling</span>
+            <span class="pill">NLP for Clinical Text</span>
+          </div>
+        </div>
+        <div class="skill-section">
+          <div class="skill-label">Academic Workflow</div>
+          <div class="pill-row">
+            <span class="pill">Systematic Review</span>
+            <span class="pill">Meta-analysis</span>
+            <span class="pill">Scientific Writing</span>
+            <span class="pill">Reproducible Analysis</span>
+            <span class="pill">EndNote</span>
+            <span class="pill">Mendeley</span>
+          </div>
+        </div>
+        <div class="skill-section">
+          <div class="skill-label">Languages</div>
+          <div class="pill-row">
+            <span class="pill">English — Fluent</span>
+            <span class="pill">Persian — Native</span>
+            <span class="pill">Azerbaijani — Native</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card" style="gap:18px;display:flex;flex-direction:column;">
+        <div class="skill-section">
+          <div class="skill-label">Python Data Science Libraries</div>
+          <div class="pill-row">
+            <span class="pill">Pandas</span>
+            <span class="pill">NumPy</span>
+            <span class="pill">SciPy</span>
+            <span class="pill">Statsmodels</span>
+            <span class="pill">Matplotlib</span>
+            <span class="pill">Seaborn</span>
+            <span class="pill">SQLite</span>
+          </div>
+        </div>
+        <div class="skill-section">
+          <div class="skill-label">Machine Learning Frameworks</div>
+          <div class="pill-row">
+            <span class="pill">scikit-learn</span>
+            <span class="pill">XGBoost</span>
+            <span class="pill">imbalanced-learn</span>
+            <span class="pill">PyTorch</span>
+          </div>
+        </div>
+        <div class="skill-section">
+          <div class="skill-label">Programming & Automation</div>
+          <div class="pill-row">
+            <span class="pill">Git</span>
+            <span class="pill">REST APIs</span>
+            <span class="pill">Streamlit</span>
+            <span class="pill">OpenCV</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ── COURSES ─────────────────────────────────── -->
+  <section id="courses">
+    <div class="s-head fade-up"><h2>Additional Training</h2></div>
+    
+    <div class="grid-2 fade-up">
+      <div class="card">
+        <div class="card-label">MIT OpenCourseWare · Independent Study</div>
+        <h3>Introduction to Machine Learning (6.036)</h3>
+        <p style="margin-top:8px;">Self-directed study covering the mathematical principles, optimization techniques, and core algorithms underlying machine learning.</p>
+        <p style="margin-top:12px; font-size:0.88rem; line-height:1.4;">
+          <strong>Key Takeaways:</strong> Provided a theoretical grounding in fundamental algorithms like logistic regression, support vector machines, and basic neural networks. It helped me understand how loss functions and gradient descent actually operate under the hood, allowing me to make more informed modeling choices.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-label">University-Led Training · TUMS</div>
+        <h3>Clinical Research Workshop Series</h3>
+        <p style="margin-top:8px;">A series of practical, university-led workshops focused on the fundamentals of academic medical research and scientific communication.</p>
+        <p style="margin-top:12px; font-size:0.88rem; line-height:1.4;">
+          <strong>Core Skills Gained:</strong> Learned about research methodologies including study design, biostatistical analysis using SPSS, literature review techniques, and manuscript preparation protocols.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-label">MIT OpenCourseWare · Independent Study</div>
+        <h3>Machine Learning for Healthcare (6.S897)</h3>
+        <p style="margin-top:8px;">Independent study of the MIT curriculum focusing on the applications of computational algorithms in clinical and healthcare setting.</p>
+        <p style="margin-top:12px; font-size:0.88rem; line-height:1.4;">
+          <strong>Key Takeaways:</strong> Gained exposure to the unique challenges of medical data, particularly regarding time-series Electronic Health Records (EHR) and clinical text. The course highlighted the practical limitations of algorithms in clinical settings, emphasizing survival analysis, handling missing data, and the absolute necessity of model interpretability.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-label">NeuroTract · 3-Phase Program</div>
+        <h3>Comprehensive Neuroscience Diploma</h3>
+        <p style="margin-top:8px;">
+          A three-phase diploma taught by faculty from Tehran University of Medical Sciences. 
+          The curriculum was aligned with the neuroscience curriculum of Duke University, School of Medicine. 
+          <a href="https://drive.google.com/drive/folders/1ASnq_fPpusaUjJsLK-iEPcguRyaZz639?usp=sharing" target="_blank" style="font-size:0.8rem; font-weight:600; color:#0056b3; text-decoration:underline;">(View Certificates)</a>
+        </p>
+        <p style="margin-top:12px; font-size:0.88rem; line-height:1.4;">
+          <strong>Curriculum Focus:</strong> Spanned three core modules: 
+          <strong>Basic Neuroscience</strong> (synaptic transmission, motor control, etc.), 
+          <strong>Clinical Neuroscience</strong> (neurodegenerative disease, stroke, seizure, psychiatric disorders), and 
+          <strong>Cognitive Neuroscience</strong> (perception, cognition, abstract function). 
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────── -->
+  <section id="contact">
+    <div class="s-head fade-up"><h2>Get In Touch</h2></div>
+    <p class="fade-up" style="color:var(--muted);font-size:.93rem;margin:-12px 0 22px;">I am actively looking for funded PhD or research positions. If you think my profile may be a fit for your group or institution, please reach out.</p>
+
+    <div class="contact-wrap fade-up">
+      <div class="contact-info">
+        <a href="mailto:mtfattahpour99@gmail.com" class="contact-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          mtfattahpour99@gmail.com
+        </a>
+        <a href="https://github.com/mtfattahpour" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+          github.com/mtfattahpour
+        </a>
+        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.55V9H3.56v11.45z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="ORCID Profile">
+          <svg width="18" height="18" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="128" cy="128" r="128" fill="#A6CE39"/><path d="M86.3 186.2H70.9V79.1h15.4v107.1zm-7.7-119.8c-5.2 0-9.4-4.2-9.4-9.4s4.2-9.4 9.4-9.4 9.4 4.2 9.4 9.4-4.2 9.4-9.4 9.4zm107.7 119.8h-15.2v-52c0-19.5-6.9-30.8-21.2-30.8-12.1 0-19.9 8.2-23.2 16.1-.9 2.2-1.1 5.2-1.1 8.2v58.5h-15.4V128c0-9.8-.3-18-.6-25.2h13.3l.7 13.3h.4c4.1-7.4 13.5-15.1 27.1-15.1 18 0 31.5 11.8 31.5 37.2v47.9h-.3z" fill="white"/></svg>
+          ORCID Profile
+        </a>
+      </div>
+
+      <form class="cform" action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+        <input type="hidden" name="access_key" value="130fc0ac-580c-4e12-856b-f26c7a5ddbaa">
+        <input type="hidden" name="subject" id="form-subject-hidden" value="New message from portfolio contact form">
+        <input type="hidden" name="redirect" value="false">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email (optional)">
+        <input type="text" name="subject_display" placeholder="Subject / Institution (optional)" id="form-subject-display">
+        <textarea name="message" placeholder="Message — please include the position and research group if applicable." required></textarea>
+        <button type="submit" id="submit-btn">Send Message</button>
+        <div id="form-result" style="display:none; padding:10px; border-radius:8px; font-size:.88rem; text-align:center;"></div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>© 2026 Mohammad Fattahpour, MD</span>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* ── Active nav ── */
+const links = document.querySelectorAll('.nav-pill a');
+const sections = document.querySelectorAll('section[id]');
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+    }
+  });
+}, { rootMargin: '-38% 0px -57% 0px', threshold: 0.01 });
+sections.forEach(s => io.observe(s));
+
+
+/* ── Curriculum details animation support ── */
+document.querySelectorAll('.curriculum-toggle').forEach(details => {
+  const summary = details.querySelector('summary');
+  summary.addEventListener('click', e => {
+    e.preventDefault();
+    details.open = !details.open;
+  });
+});
+
+/* ── Scroll fade-in ── */
+const faders = document.querySelectorAll('.fade-up');
+const fio = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      fio.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+faders.forEach(f => fio.observe(f));
+
+/* ── Web3forms contact handler ── */
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const result = document.getElementById('form-result');
+    // Merge subject display into hidden subject field
+    const subjectDisplay = document.getElementById('form-subject-display').value.trim();
+    document.getElementById('form-subject-hidden').value = subjectDisplay
+      ? 'Portfolio Contact: ' + subjectDisplay
+      : 'New message from portfolio contact form';
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: new FormData(contactForm)
+      });
+      const data = await res.json();
+      result.style.display = 'block';
+      if (data.success) {
+        result.style.background = 'rgba(43,99,73,.1)';
+        result.style.color = 'var(--green)';
+        result.style.border = '1px solid rgba(43,99,73,.2)';
+        result.textContent = 'Message sent successfully. Thank you for reaching out!';
+        contactForm.reset();
+      } else {
+        result.style.background = 'rgba(200,50,50,.08)';
+        result.style.color = '#c03030';
+        result.style.border = '1px solid rgba(200,50,50,.2)';
+        result.textContent = 'Something went wrong. Please try again or email directly.';
+      }
+    } catch {
+      result.style.display = 'block';
+      result.style.background = 'rgba(200,50,50,.08)';
+      result.style.color = '#c03030';
+      result.style.border = '1px solid rgba(200,50,50,.2)';
+      result.textContent = 'Network error. Please try emailing directly.';
+    }
+    btn.textContent = 'Send Message';
+    btn.disabled = false;
+  });
+}
+</script>
+</body>
+</html>
